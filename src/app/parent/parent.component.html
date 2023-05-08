@@ -1,0 +1,47 @@
+<div class="page-area">
+  <h1>Parent Component</h1>
+
+  <div class="alert alert-warning d-flex align-item-center" *ngIf="addedProduct">
+    <strong>{{addedProduct}}</strong>&nbsp; Selected to cart
+    <button class="btn btn-warning btn-sm ms-auto">Checkout</button>
+  </div>
+  <hr class="mb-3">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <img src="/assets/iphone.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Iphone</h5>
+          <a (click)="onSelectProduct('Iphone')" class="btn btn-success">Buy Product</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/assets/TV.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TV</h5>
+          <a (click)="onSelectProduct('TV')" class="btn btn-success">Buy Product</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/assets/washing machine.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wishing Machine</h5>
+          <a (click)="onSelectProduct('Wishing Machine')" class="btn btn-success">Buy Product</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/assets/laptop.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Laptop</h5>
+          <a (click)="onSelectProduct('Laptop')" class="btn btn-success">Buy Product</a>
+        </div>
+      </div>
+    </div>
+
+    <app-child class="w-100" [productSelected]="proSelected" [selectedProduct]="selectPro"
+      (addedProduct)="onAddedProduct($event)"></app-child>
+    <br><br>
+
+
+  </div>
+</div>

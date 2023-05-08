@@ -1,0 +1,7 @@
+.card{
+    display: inline-block;
+    width: 20%;
+    color: black;
+    object-fit: contain;
+    margin: 0 10px 10px;
+}
