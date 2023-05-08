@@ -1,0 +1,23 @@
+<header>
+    <nav>
+
+        <!-- if you use href ="" then you component loading
+        or if you use routerLink ="" then you component not loading -->
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link" routerLinkActive="active" 
+                routerLink="/home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" routerLinkActive="active" 
+                routerLink="/about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" routerLinkActive="active"
+                    routerLink="/products/">Products</a></li>
+            <li class="nav-item"><a class="nav-link" routerLinkActive="active"
+                    routerLink="/contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLinkActive="active"
+                        routerLink="/parent">By Products</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- <router-outlet> is a dynamic component that the router uses to display views based on router navigation -->
+<router-outlet></router-outlet>
