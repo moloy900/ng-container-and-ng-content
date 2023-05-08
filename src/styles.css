@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.page-area{
+    background-color: rgb(103, 156, 103);
+    color: white;
+    padding: 30px;
+    height: 700px;
+}
+
+.page-area h1{
+    text-align: center;
+
+}
+
+.page-area p{
+    line-height: 30px;
+    margin-top: 30px;
+}
+
