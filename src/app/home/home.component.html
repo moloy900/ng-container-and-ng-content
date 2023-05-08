@@ -1,0 +1,39 @@
+<div class="page-area">
+    <h1>Home</h1>
+
+    <div>
+        <p>In Angular, the ngFor directive is used to display a collection of items in the template. Two common ways to modify the collection are through the push() and splice() methods.
+
+            push() is used to add a new item to the end of the collection, while splice() is used to remove or insert items at a specific index.</p>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" placeholder="Enter Name" #name>&nbsp;
+            <button (click)="addMore(name); name.value=''">Add</button>
+        </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Sl. No</th>
+                        <th>Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of data; index as i">
+                        <td>{{i+1}}</td>
+                        <td>{{item.name | titlecase}}</td>
+                        <th><Button class="btn btn-sm btn-danger" (click)="removeItem(i)">Remove</Button></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
