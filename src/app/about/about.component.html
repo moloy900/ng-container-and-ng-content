@@ -1,0 +1,16 @@
+<div class="page-area">
+    <h1>About Us</h1>
+
+    <div>
+        <p>In Angular, ng-container is a logical container that is used to group elements, but it does not get rendered as a HTML element in the DOM. Instead, it provides a way to group elements together for structural directives like ngIf, ngFor, and ngSwitch.</p>
+    </div>
+
+    <div class="product">
+        <ng-container *ngIf="showProduct">
+            <div  *ngFor="let item of products">
+                <p>{{item.name}}</p>
+            </div>
+        </ng-container>
+       
+    </div>
+</div>
