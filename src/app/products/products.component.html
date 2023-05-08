@@ -1,0 +1,42 @@
+<div class="page-area">
+  <h1>Products</h1>
+
+  <div>
+    <p>ng-content is a directive in Angular that allows you to project content into a component.In other words, it is a placeholder element that is used to insert content dynamically into a component. This can be useful in situations where you want to reuse the same component in multiple places, but want to display different content each time.</p>
+  </div>
+
+  <hr class="mb-4 mt-3">
+  <div class="row">
+    <!-- <div class="card">
+      <div class="card-body">
+        <img src="/assets/washing machine.jpg" class="card-img-top" alt="">
+        <h5 class="card-title">Laptop</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <a routerLink="washing-machine" class="btn btn-primary">Know More</a>
+      </div>
+    </div> -->
+    
+    <div class="col-md-8">
+      <app-card>
+        <img src="/assets/laptop.jpg" class="card-img-top img-thumbnail" alt="...">
+        <h5 class="card-title display-5">Laptop</h5>
+        <a routerLink="laptop" class="btn btn-primary mt-3">Know More</a>
+      </app-card>
+
+      <app-card>
+        <img src="/assets/washing machine.jpg" class="card-img-top img-thumbnail" alt="...">
+        <h5 class="card-title display-6">Washing Machine</h5>
+        <a routerLink="washing-machine" class="btn btn-primary mt-3">Know More</a>
+      </app-card>
+      <app-card>
+        <img src="/assets/iphone.jpg" class="card-img-top img-thumbnail" alt="...">
+        <h5 class="card-title display-4">Iphone</h5>
+        <a routerLink="iphone" class="btn btn-primary mt-3">Know More</a>
+      </app-card>
+      
+    </div>
+
+    <div class="col-md-4">
+      <router-outlet></router-outlet>
+    </div>
+</div>
